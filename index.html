@@ -8,11 +8,12 @@
 
 	<script type="text/javascript">
 	var sound = new Howl({
-		urls: ['test.mp3', 'test.ogg'],
+		urls: ['test2.mp3', 'test2.ogg'],
 		sprite: {
-    		blast: [9000, 22000],
-   			laser: [40000, 50000],
-    		weiner: [300000, 303000]
+    		half: [0, 2000],
+    		whole: [0, 4000],
+    		quarter: [0, 1000],
+    		third: [0, 1333]
   		}
 
 		});
@@ -29,9 +30,10 @@
 <body>
 	<div class="wrapper">
 		<p>Prototype</p>
-		<button onclick="sound.play('blast')">Play Sprite 1</button>
-		<button onclick="sound.play('laser')">Play Sprite 2</button>
-		<button onclick="sound.play('weiner')">Play Sprite 3</button>
+		<button onclick="sound.play('quarter')">Quarter Sprite</button>
+		<button onclick="sound.play('third')">Third Sprite</button>
+		<button onclick="sound.play('half')">Half Sprite</button>
+		<button onclick="sound.play('whole')">Whole Sprite</button>
 		<br>
 		<br>
 		<button onclick="sound.pause()">Pause</button>
